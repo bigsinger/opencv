@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e9e98ee4-2e87-49da-ba62-c1aa4bb5b670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{8b102714-5716-468f-9def-f9dcb468a686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\opencl">
+      <UniqueIdentifier>{5c57bbee-3d0b-4375-a908-2bf5dbf20412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{3fbb0072-133e-4027-9317-3f35e732f51c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="opencv_perf_calib3d_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\calib3d\perf\perf_cicrlesGrid.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\calib3d\perf\perf_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\calib3d\perf\perf_pnp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\calib3d\perf\opencl\perf_stereobm.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\calib3d\perf\perf_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\calib3d\CMakeLists.txt" />
+  </ItemGroup>
+</Project>

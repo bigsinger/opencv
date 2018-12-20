@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4EAE0E16-B194-471E-AB0F-D7CAAEA0E27D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\2017static\</OutDir>
+    <IntDir>opencv_ts.dir\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\..\2017static\</OutDir>
+    <IntDir>opencv_ts.dir\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\ts\include;F:\open\lib\opencvc\sources\modules\ts\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;F:\open\lib\opencvc\sources\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions> /bigobj /MP4 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\ts\include;F:\open\lib\opencvc\sources\modules\ts\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;F:\open\lib\opencvc\sources\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>F:/open/lib/opencvc/sources/modules/ts/src/precomp.hpp</PrecompiledHeaderFile>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4324;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>F:/open/lib/opencvc/sources/modules/ts/src/precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\ts\include;F:\open\lib\opencvc\sources\modules\ts\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;F:\open\lib\opencvc\sources\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)d.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\ts\include;F:\open\lib\opencvc\sources\modules\ts\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;F:\open\lib\opencvc\sources\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions> /bigobj /MP4 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\ts\include;F:\open\lib\opencvc\sources\modules\ts\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;F:\open\lib\opencvc\sources\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>F:/open/lib/opencvc/sources/modules/ts/src/precomp.hpp</PrecompiledHeaderFile>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4324;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>F:/open/lib/opencvc/sources/modules/ts/src/precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\ts\include;F:\open\lib\opencvc\sources\modules\ts\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;F:\open\lib\opencvc\sources\modules\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\cuda_perf.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\cuda_test.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ocl_perf.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ocl_test.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ts.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ts_arrtest.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ts_func.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ts_gtest.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\ts_perf.cpp" />
+    <ClCompile Include="opencv_ts_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/open/lib/opencvc/sources/modules/ts/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/open/lib/opencvc/sources/modules/ts/src/precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\cuda_perf.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\cuda_test.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\ocl_perf.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\ocl_test.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\ts_ext.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\ts_gtest.h" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\include\opencv2\ts\ts_perf.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\src\precomp.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\ts\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/open/lib/opencvc/sources/modules/ts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"D:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/open/lib/opencvc/sources -B../../ --check-stamp-file F:\open\lib\opencvc\vs2008\modules\ts\CMakeFiles\generate.stamp
+if errorlevel 1 goto :VCReportError
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\open\lib\opencvc\sources\modules\ts\CMakeLists.txt;F:\open\lib\opencvc\sources\modules\ts\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/open/lib/opencvc/sources/modules/ts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"D:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/open/lib/opencvc/sources -B../../ --check-stamp-file F:\open\lib\opencvc\vs2008\modules\ts\CMakeFiles\generate.stamp
+if errorlevel 1 goto :VCReportError
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\open\lib\opencvc\sources\modules\ts\CMakeLists.txt;F:\open\lib\opencvc\sources\modules\ts\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZERO_CHECK.vcxproj">
+      <Project>{5aef8b4a-0b37-4601-94a5-c7dca714b69b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\core\opencv_core.vcxproj">
+      <Project>{49434db1-fb22-4b14-aa45-7712aa88c4cb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\hal\opencv_hal.vcxproj">
+      <Project>{6117c562-4dde-4608-81d1-23412b8b56df}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\highgui\opencv_highgui.vcxproj">
+      <Project>{016b534a-7575-437e-a1aa-420a8fdebbe3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{39af6707-b052-495f-b7a1-d0974fd4b07d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\imgproc\opencv_imgproc.vcxproj">
+      <Project>{088ae20c-ed0a-48b8-b843-417aaf0a880a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\videoio\opencv_videoio.vcxproj">
+      <Project>{a8983805-7a74-4e9d-897e-27bcc20fba4f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

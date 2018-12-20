@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0EE4DEE-9B54-4045-BE36-74D8753B99B7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>opencv_photo_object.dir\Debug\</OutDir>
+    <IntDir>opencv_photo_object.dir\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>opencv_photo_object.dir\Release\</OutDir>
+    <IntDir>opencv_photo_object.dir\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /MP4 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\include\opencl\1.2;F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\photo\include;F:\open\lib\opencvc\sources\modules\photo\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\include\opencl\1.2;F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\photo\include;F:\open\lib\opencvc\sources\modules\photo\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\include\opencl\1.2;F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\photo\include;F:\open\lib\opencvc\sources\modules\photo\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <OutputFile>opencv_photo_object.dir\Debug\opencv_photo_object.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj /MP4 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\include\opencl\1.2;F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\photo\include;F:\open\lib\opencvc\sources\modules\photo\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\include\opencl\1.2;F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\photo\include;F:\open\lib\opencvc\sources\modules\photo\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\open\lib\opencvc\sources\3rdparty\include\opencl\1.2;F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\modules\photo\include;F:\open\lib\opencvc\sources\modules\photo\src;.;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <OutputFile>opencv_photo_object.dir\Release\opencv_photo_object.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/open/lib/opencvc/sources/modules/photo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"D:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/open/lib/opencvc/sources -B../../ --check-stamp-file F:\open\lib\opencvc\vs2008\modules\photo\CMakeFiles\generate.stamp
+if errorlevel 1 goto :VCReportError</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\open\lib\opencvc\sources\modules\photo\CMakeLists.txt;F:\open\lib\opencvc\sources\modules\photo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/open/lib/opencvc/sources/modules/photo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"D:\Program Files (x86)\CMake\bin\cmake.exe" -HF:/open/lib/opencvc/sources -B../../ --check-stamp-file F:\open\lib\opencvc\vs2008\modules\photo\CMakeFiles\generate.stamp
+if errorlevel 1 goto :VCReportError</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\open\lib\opencvc\sources\modules\photo\CMakeLists.txt;F:\open\lib\opencvc\sources\modules\photo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\align.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\calibrate.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\contrast_preserve.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\denoise_tvl1.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\denoising.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\denoising.cuda.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\hdr_common.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\inpaint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\merge.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\npr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\seamless_cloning.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\seamless_cloning_impl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\tonemap.cpp" />
+    <ClCompile Include="opencl_kernels_photo.cpp" />
+    <ClCompile Include="opencv_photo_pch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/open/lib/opencvc/sources/modules/photo/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/open/lib/opencvc/sources/modules/photo/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\include\opencv2\photo.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\include\opencv2\photo\cuda.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\include\opencv2\photo\photo.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\include\opencv2\photo\photo_c.h" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\arrays.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\contrast_preserve.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\fast_nlmeans_denoising_invoker.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\fast_nlmeans_denoising_invoker_commons.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\fast_nlmeans_denoising_opencl.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\fast_nlmeans_multi_denoising_invoker.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\hdr_common.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\npr.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\open\lib\opencvc\sources\modules\photo\src\seamless_cloning.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+    <ClInclude Include="opencl_kernels_photo.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="opencl_kernels_photo.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_photo.cpp, opencl_kernels_photo.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"D:\Program Files (x86)\CMake\bin\cmake.exe" -DMODULE_NAME="photo" -DCL_DIR="F:/open/lib/opencvc/sources/modules/photo/src/opencl" -DOUTPUT="F:/open/lib/opencvc/vs2008/modules/photo/opencl_kernels_photo.cpp" -P F:/open/lib/opencvc/sources/cmake/cl2cpp.cmake
+if errorlevel 1 goto :VCReportError</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\open\lib\opencvc\sources\modules\photo\src\opencl\nlmeans.cl;F:\open\lib\opencvc\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencl_kernels_photo.cpp;opencl_kernels_photo.hpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_photo.cpp, opencl_kernels_photo.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"D:\Program Files (x86)\CMake\bin\cmake.exe" -DMODULE_NAME="photo" -DCL_DIR="F:/open/lib/opencvc/sources/modules/photo/src/opencl" -DOUTPUT="F:/open/lib/opencvc/vs2008/modules/photo/opencl_kernels_photo.cpp" -P F:/open/lib/opencvc/sources/cmake/cl2cpp.cmake
+if errorlevel 1 goto :VCReportError</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\open\lib\opencvc\sources\modules\photo\src\opencl\nlmeans.cl;F:\open\lib\opencvc\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencl_kernels_photo.cpp;opencl_kernels_photo.hpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZERO_CHECK.vcxproj">
+      <Project>{5aef8b4a-0b37-4601-94a5-c7dca714b69b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
