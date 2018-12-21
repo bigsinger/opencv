@@ -1,0 +1,4 @@
+﻿  Building Custom Rule F:/open/lib/opencvc/sources/3rdparty/zlib/CMakeLists.txt
+  系统找不到指定的路径。
+  系统找不到指定的批处理标签 - VCReportError
+d:\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(209,5): error MSB6006: “cmd.exe”已退出，代码为 1。
